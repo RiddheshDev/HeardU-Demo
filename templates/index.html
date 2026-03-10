@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Start Chat</title>
+</head>
+<body>
+    <h2>Enter your Details</h2>
+    <form method="POST">
+        <input type="text" name="user_id" required placeholder="Enter user no.">
+        <input type="text" name="client" required placeholder="Enter client name">
+        <input type="text" name="location" required placeholder="Enter location">
+        <br><br>
+
+        <h3>Select Agent Type</h3>
+        <select name="use_case" required>
+            <option value="restaurant">Restaurant Feedback</option>
+            <option value="Housing_agent_wo_rag">Housing Agent without RAG</option>
+            <option value="Housing_agent_w_rag">Housing Agent with RAG</option>
+        </select>
+        <br><br>
+        <button type="submit">Start Chat</button>
+    </form>
+</body>
+</html>
